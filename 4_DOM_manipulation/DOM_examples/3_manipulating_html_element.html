@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating elements</title>
+    </head>
+    <body>
+        <!-- Append child -->
+        <!-- <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Project</li>
+        </ul> -->
+
+
+        <!-- Text Content -->
+        <!-- <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Project</li>
+        </ul> -->
+
+
+        <!-- InnerText -->
+        <!-- <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li style = "display: none;">Project</li>
+        </ul> -->
+
+        <!-- Inner HTML -->
+        <!-- <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li style = "display: none;">Project</li>
+        </ul> -->
+
+        <!-- innerAdjacentHTML -->
+         <ul id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+        <script>
+
+            // Create element
+            // let div = document.createElement("div");
+            // div.innerHTML = "<p>Welcome to Manipulating element</p>"
+            // // div.id = "title";
+            // div.className = "title";
+            // console.log(div);
+
+            // Append Child
+            // let menu = document.getElementById("menu");
+            // let list = document.createElement("li");
+            // list.innerHTML = "Contact"
+            // menu.appendChild(list);
+
+            // Text content
+            // let menu = document.getElementById("menu");
+            // console.log(menu.textContent)
+
+            // InnerText
+            // let menu = document.getElementById("menu");
+            // console.log(menu.innerText);
+            // console.log(menu.textContent);
+            // menu.textContent = "Hello"
+
+            // InnerHTML
+            // let menu = document.getElementById("menu")
+            // menu.innerHTML = "<h1>Hello!</h1>"
+
+            // After
+            // let menu = document.getElementById("menu")
+            // menu.after(node1, node2, ... nodeN)
+            // menu.after(str1, str2)
+           
+            // Append method
+            // syntext
+            // parentNode.append(newNodes);
+
+            // Prepand method
+            // syntext
+            // parentNode.prepend(newNodes);
+
+            // insertAdjacentHTML
+            // let menu = document.getElementById("menu");
+            // menu.insertAdjacentHTML("beforeend", "<li>Contact</li>")
+            // positionName: before begin, after begin, before end, after end 
+
+            // Replace Child
+            // Systext
+            // parentNode.replaceChild(newChild, oldChild);
+
+            // Clone Node
+            // let menu = document.getElementById("menu")
+            //Systext
+            // let newNode = originalNode.cloneNode();
+            // let newNode = menu.cloneNode(true) //make clone with childs
+            // let newNode = menu.cloneNode() // only make clone of that element not childs
+            // console.log(newNode);
+
+            // Remove child
+            // let menu = document.getElementById("menu");
+            // menu.removeChild(menu.firstElementChild);
+
+            // Insertbefore method
+            // let menu = document.getElementById("menu")
+            // // Syntext
+            // // parentNode.insertBefore(newNode, existingNode)
+            // let newNode = document.createElement("li")
+            // newNode.innerHTML = "Contact"
+            // menu.insertBefore(newNode, menu.lastElementChild)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <div id="container">
+            <!-- <button type="button" onClick="console.log('Button Clicked')">Click Here</button> -->
+            <!-- <button id="btn" type="button" onClick="console.log(this.id)">Click Here</button> -->
+            <button id="btn">Click Here</button>
+        </div>
+        <script>
+            // function displayMsg(){
+            //     // console.log("Button Clicked From Function")
+            //     // console.log(event)
+            // }
+
+            // let btn = document.getElementById("btn")
+            // btn.onclick = function(){
+            //     console.log("Button Clicked")
+            // }
+
+            // addEventlistener
+            //Syntext
+            // addEventListener(event, function, useCapture(optional))
+            let btn = document.getElementById("btn")
+            // btn.addEventListener('click', () => {
+            //     // console.log("Button clicked");
+            //     console.log(event.type);
+            // })
+
+            const gretting = () => {
+                console.log("hello Arpit")
+            }
+            btn.addEventListener('click', gretting)
+
+            // Systext
+            // btn.removeEventListener(event, function)
+            btn.removeEventListener('click', gre)
+        </script>
+    </body>
+</html>

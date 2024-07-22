@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating Element's style</title>
+        <style>
+            input{
+                background-color: red;
+                font-size: 12px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <input type="text" id="username" placeholder="username" style="background-color: red; font-size: 20px;"> -->
+
+        <!-- Class Name Property & ClassList -->
+        <h1 id="title" class="main message">Manipulating Element's style</h1>
+        <script>
+
+            // Style Property
+            // let inputBox = document.getElementById("username")
+            // console.log(inputBox.style.backgroundColor);
+            // console.log(inputBox.style.fontSize);
+            // inputBox.style.padding = "10px";
+            // console.log(inputBox);
+
+            // CSS Text
+            // let inputBox = document.getElementById("username")
+            // inputBox.style.cssText += "width: 200px; height: 100px";
+            // console.log(inputBox);
+
+            // getComputedStyle
+            // let inputBox = document.getElementById("username")
+            // window.getComputedStyle(element, pseudoElement)
+            // console.log(window.getComputedStyle(inputBox).backgroundColor);
+            // console.log(window.getComputedStyle(inputBox).width);
+
+            // ClassName Property
+            // let title = document.getElementById("title");
+            // title.className += " new";
+            // console.log(title.className);
+            // console.log(title);
+
+            // ClassList
+            let title = document.getElementById("title");
+            // // title.classList.add("new", "new2")
+            // // console.log(title.classList);
+            // // console.log(title);
+            // // title.classList.remove("message", "main");
+            // // console.log(title);
+            // title.classList.replace("message", "msg");
+            // console.log(title);
+            // console.log(title.classList.contains("message"));
+            // title.classList.toggle("message");
+            // console.log(title.classList);
+            // title.classList.toggle("message");
+            // console.log(title.classList);
+        </script>
+    </body>
+</html>
