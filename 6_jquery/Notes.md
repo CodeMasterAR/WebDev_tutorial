@@ -16,6 +16,7 @@
 ### HTML5 DOCTYPE
 ```html
 <!DOCTYPE html>
+```
 
 # jQuery Object ($)
 
@@ -43,3 +44,4 @@
     $("#readyDemo").text("Hello, world!");
   });
 </script>
+```
