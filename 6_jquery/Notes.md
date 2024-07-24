@@ -11,7 +11,7 @@
 * DOCTYPE are a key component of compliant web pages: your markup and CSS won't validate without them
 
 > HTML5 = DOCTYPE
-> $<!DOCTYPE html$>
+> <!DOCTYPE html$>
 
 ## jQuery Object($)
 * jQuery(<code>): It is a jQuery Function
