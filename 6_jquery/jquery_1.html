@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-DEMO</title>
+</head>
+<body>
+    <div id="readyDemo">
+
+    </div>
+
+    <p>List 1:</p>
+    <ul id="item-list">
+        <li id="first-li">
+            <a href="https://google.com">Outside</a>
+            <div><a href="" id="inside-a-div">Inside</a></div>
+        </li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <button>Click Me!</button>
+
+    <style>
+        #readyDemo{
+            font-size: 20px;
+        }
+    </style>
+
+    <script src="jquery.js"></script>
+    
+    <script>
+        console.log('On line number 15');
+        $(document).ready(function() {
+            // console.log('Document is Ready!!!');
+            $('#readyDemo').text('Document is Ready').css('color', 'green').fadeIn(5000);
+        });
+        console.log('On line number 19');
+    </script>
+</body>
+</html>
