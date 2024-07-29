@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-DEMO</title>
+</head>
+<body>
+
+    <p>List 1:</p>
+    <ul id="item-list">
+        <li id="first-li">
+            Coffee
+            <a href="google.com">google.com</a>
+            <div>
+                <a href="yahoo.com" id="inside-a-div">yahoo.com</a>
+            </div>
+        </li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <button>Click Me!</button>
+
+    
+
+    <script src="jquery.js"></script>
+    
+    <script>
+        // console.log('On line number 15');
+        $(document).ready(function() {
+            $('.readyDemo').text('Document is Ready!!').css('color', 'green').fadeIn("slow");
+
+            // $('h1').text('Changed the H1 text').css('color', 'red');
+
+            // $("a[target = '_blank']").css('color', 'green')
+            // $("a[href = 'yahoo.com']").text('Yahoo');
+            // $("a:not([href = 'google.com'])").text('Yahoo');
+
+            // Only first and last chaild
+            // $('#item-list > li:last').css('color', 'red');
+
+            $("button").click(function(){
+                // .find() Example
+                // $("#item-list").find("a").css('color', 'red');
+
+                // .children() Example
+                // $("#first-li").children("a").css('color', 'red'); 
+                // $("#first-li").find("a").css('color', 'red'); 
+
+                // .closest() Example
+                // $("#inside-a-div").closest("li").css('color', 'red');
+
+                // .parent() Example
+                // $("#inside-a-div").parent().css('border', '1px solid black');
+
+                // .next() Example
+                // $("#first-li").next().css('border', "1px solid black");
+
+                // .prev() Example
+                // $("#item-list li:last").prev().css('border', '1px solid black');
+
+                // .siblings() Example
+                // $("#first-li").siblings().css('border', '1px solid black');
+                // $("#item-list li:last").siblings().css('border', '1px solid black');
+
+                // .first() Example
+                // $("li").first().css('border', '1px solid black');
+
+                // .last() Example
+                $("li").last().css('border', '1px solid black');
+            })
+        });
+        // console.log('On line number 19');
+    </script>
+</body>
+</html>

@@ -196,3 +196,109 @@ $('#Selector).myCustomFunction();
 - `siblings()`: Moves up and down, targeting all siblings.
 - `first()`: Gets the first element from the selected set.
 - `last()`: Gets the last element from the selected set.
+
+### find(): 
+- This function finds all matching elements from the DOM
+    Eg
+    ```html
+    <ul>
+        <li><a href="http://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="http://edureka.co/" target="_self">Edureka</a></li>
+        <li><a href="http://facebook.com/" target="_blank">Facebook</a></li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $("ul").find("li").text();
+        });
+    </script>
+    ```
+### Children():
+- It is same as find, but moves only one level down
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("ul").children("a").text();
+        });
+    </script>
+    ```
+
+### closest():
+- Moving up the DOM tree, until it finds the matching element in the DOM
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("a").closest("ul").css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+### parent():
+- parent also moves up the DOM tree but to a single level
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("a").parent("li").css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+### next():
+- moves down and targets the immediately following slibling
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("li").next(".edu").css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+### prev():
+- moves just like .next(), but moves up, targeting the immediately preceding sibling
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("a").prev("li").css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+
+### sibling():
+- It targets move up and down, targeting all siblings
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("li").siblings(".edu").css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+
+### first():
+- Gets the first elements from the selected set
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("li").first().css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```
+
+
+### last():
+- Gets the last element from the Selected Set
+    Eg
+    ```html
+    <script>
+        $(document).ready(function(){
+            $("li").last().css("border", "1px solid #ff9900");
+        });
+    </script>
+    ```

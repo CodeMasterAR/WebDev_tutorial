@@ -3,55 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery-DEMO</title>
+    <title>jQuery-forms</title>
 </head>
 <body>
 
-    <h1>Heading H1</h1>
-
-    <div class="readyDemo">
-
-    </div>
-
-    <a href="google.com" target="_blank">Google Blank</a>
-    <a href="yahoo.com" target="_self">Google 2</a>
-
-    <p>List 1:</p>
-    <ul id="item-list">
-        <li id="first-li">
-            Coffee
-            <!-- <a href="https://google.com">Outside</a>
-            <div><a id="inside-a-div">Inside</a></div> -->
-        </li>
-        <li>Milk</li>
-        <li>Tea</li>
-    </ul>
-
-    <button>Click Me!</button>
-
-    <style>
-        .readyDemo{
-            font-size: 20px;
-        }
-    </style>
-
     <script src="jquery.js"></script>
-    
+
     <script>
-        // console.log('On line number 15');
-        $(document).ready(function() {
-            $('.readyDemo').text('Document is Ready!!').css('color', 'green').fadeIn("slow");
-
-            $('h1').text('Changed the H1 text').css('color', 'red');
-
-            // $("a[target = '_blank']").css('color', 'green')
-            // $("a[href = 'yahoo.com']").text('Yahoo');
-            $("a:not([href = 'google.com'])").text('Yahoo');
-
-            // Only first and last chaild
-            $('#item-list > li:last').css('color', 'red');
-        });
-        // console.log('On line number 19');
+        $('document').ready(function () {
+            
+        })
     </script>
 </body>
 </html>

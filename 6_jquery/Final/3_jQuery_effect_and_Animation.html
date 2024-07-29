@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-Animation</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="color-box after">After</div>
+        <div class="color-box before">Before</div>
+        <div class="color-box append">Append</div>
+        <div class="color-box prepend">Prepend</div>
+    </div>
+
+    <br/>
+
+    <!-- <button id="toggleBoxes">Toggle Boxes</button> -->
+    <!-- <button id="showBoxes">Show Boxes</button><br/><br/>
+    <button id="hideBoxes">Hide Boxes</button> -->
+
+    <button id="animateBoxes">Animate</button>
+
+    <script src="jquery.js"></script>
+
+    <style>
+        .container {
+            display: flex; /* Use flexbox for layout */
+            gap: 10px; /* Add space between the boxes */
+            padding: 10px; /* Optional: Add some padding around the container */
+        }
+
+        .color-box {
+            width: 100px; /* Set a fixed width for the boxes */
+            height: 100px; /* Set a fixed height for the boxes */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .after {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .before {
+            background-color: #2196F3; /* Blue */
+        }
+
+        .append {
+            background-color: #f44336; /* Red */
+        }
+
+        .prepend {
+            background-color: #FFC107; /* Yellow */
+        }
+
+        button {
+            background-color: #007BFF; /* Blue background */
+            color: white; /* White text */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Space inside the button */
+            font-size: 16px; /* Font size */
+            font-family: Arial, sans-serif; /* Font family */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Button active effect */
+        button:active {
+            transform: scale(0.98); /* Slightly scale down the button */
+        }
+
+        /* Button focus effect */
+        button:focus {
+            outline: none; /* Remove default outline */
+            box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Add a blue glow for accessibility */
+        }
+    </style>
+
+    <script>
+        $('document').ready(function () {
+            // $('#hideBoxes').click(function() {
+            //     // $('.color-box').hide(2000);
+            //     // $('.color-box').fadeOut(1000);
+            //     // $('.color-box').fadeTo(1000, 0.2);
+            //     // $('.color-box').slideUp(500);
+            // })
+            // $('#showBoxes').click(function() {
+            //     // $('.color-box').show(2000);
+            //     // $('.color-box').fadeIn(1000);
+            //     // $('.color-box').fadeTo(1000, 1);
+            //     // $('.color-box').slideDown(500);
+            // })
+            // $('#toggleBoxes').click(function() {
+            //     $('.color-box').toggle(1000);
+            // })
+
+            // ********** Animation ***********
+            $('#animateBoxes').click(function (){
+                $('.color-box').animate({
+                    'width': '200px',
+                    'margin-top': '40px'
+                }, 2000)
+            })
+
+        })
+    </script>
+</body>
+</html>
